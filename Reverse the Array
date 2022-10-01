@@ -1,1 +1,40 @@
+/*Questions of GeeksforGeeks
+Reverse the Array in c.*/
 
+
+//  Function Declare and Defined.
+void arrRev(int arr[])
+{
+    int temp;
+    for (int i = 0; i < 6 / 2; i++)
+    {
+
+        // for swapping the number these below, three statements are excuted...............
+
+        temp = arr[i];
+        arr[i] = arr[5 - i];
+        arr[5 - i] = temp;
+    }
+}
+#include <stdio.h>
+int main()
+{
+    int i;
+    int arr[6] = {1, 78, 98, 67, 99, 65};
+    printf("Before reversing the array\n");
+    for (i = 0; i < 6; i++)
+    {
+        printf("the value of index %d is %d\n", i, arr[i]);
+    }
+    printf("After Reversing the Array\n");
+
+    //   Function call And Array passed............................
+
+    arrRev(arr);
+    for (i = 0; i < 6; i++)
+    {
+        printf("the value of index %d is %d\n", i, arr[i]);
+    }
+
+    return 0;
+}
