@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+    // Function Declaration
+
+int maxSumSubArray(int arr[],int size);
+
+    // Variable Declaration
+int i;
+    int max_sum = 0;
+    int current_sum = 0;
+    int arr[5]={5,-4,-2,6,-1};
+
+
+    // loop is started for Traversing the array
+
+    for (int i = 0; i<4; i++)
+    {
+        
+        current_sum = current_sum + arr[i];
+        if (current_sum > max_sum)
+        {
+            max_sum = current_sum;
+        }
+        if (current_sum < 0)
+        {
+            current_sum = 0;
+        }
+    }
+printf("The maximum sum of subAraay is: %d\n",max_sum);
+    return 0;
+}
