@@ -4,20 +4,21 @@ Checking Maximum number or biggest number in c.*/
 
 #include<stdio.h>
 int main(){
+
     // Variable Defined
-    int arr[10],i,max;
-    for(int i=0;i<10;i++){
-    printf("Enter the Array elements:8");
+    
+    int arr[5],i,min;
+    for(int i=0;i<5;i++){
+    printf("Enter the Array elements: ");
     scanf("%d",&arr[i]);
     }
 
-
-    //  FINDING maximum Elements.
-    max=arr[0];
-    for(i=0;i<10;i++){
-    if(arr[i]>max)
-    max=arr[i];
+    //  FINDING minimum Elements.
+    min=arr[0];
+    for(i=0;i<5;i++){
+    if(arr[i]<min)
+    min=arr[i];
     }
-    printf("The Maximum no is %d",max);
+    printf("The Minimum no is %d",min);
     return 0;
 }
