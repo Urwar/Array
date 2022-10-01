@@ -1,5 +1,5 @@
 /*Questions of GeeksforGeeks
-Checking Maximum number or biggest number in c.*/
+Checking Minimum number or Smallest number in c.*/
 
 
 #include<stdio.h>
